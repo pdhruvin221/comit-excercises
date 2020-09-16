@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        ul li:first-of-type{
+            font-size: 32px;
+        }
+
+        li.two:hover{
+            background-color: red;
+            color: white;
+        }
+
+        ul li:nth-child(3n){
+            color: green;
+        }
+
+        ul li:last-child{
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Funky List Items</h1>
+
+    <ul>
+        <li>one</li>
+        <li class="two">two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+        <li>seven</li>
+        <li>eight</li>
+        <li>nine</li>
+        <li>ten</li>
+    </ul>
+    
+</body>
+</html>
