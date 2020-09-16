@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title> 
+</head>
+<body>
+    <h1>Create User</h1> <hr >
+
+    <form action="create-user.html" method="get">
+
+        <div>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="email" required />
+        </div>
+
+        <div>    
+            <label>Username:</label>
+            <input type="text" name="username" placeholder="username" required size="30" maxlength="12" />
+        </div>
+
+        <div>    
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="password" size="30" maxlength="8" required />
+        </div>
+        
+        <div>
+            <label>Bio:</label><br />
+            <input type="textarea" name="bio" placeholder="give a brief description of this user">
+        </div>
+
+        <fieldset>
+            <legend>Interest</legend>
+            <div>
+                <label>Select your favourite superhero</label>
+                <input type="radio" name="superhero"  /> Superman
+                <input type="radio" name="superhero"  />Batman
+                <input type="radio" name="superhero" checked />Wonder Woman
+                <input type="radio" name="superhero"  />Flash
+                <input type="radio" name="superhero"  />Thor
+                <input type="radio" name="superhero"  />Hulk
+            </div>
+
+            <div>
+                <label>Select your favourite video game</label>
+                <input type="checkbox" name="video_games" value="Fifa" checked />Fifa
+                <input type="checkbox" name="video_games" value="NHL"  />NHL
+                <input type="checkbox" name="video_games" value="Resident Evil"  />Resident Evil
+                <input type="checkbox" name="video_games" value="Uncharted" checked />Uncharted
+            </div>
+        </fieldset>
+
+        <div>
+            <input name="userid" value="2300" hidden />
+        </div>
+
+        <div>
+            <input type="submit" value="Create User" />
+        </div>
+
+    </form>
+    
+</body>
+</html>
