@@ -1,0 +1,440 @@
+
+html {
+    height: 100%;
+}
+
+body{
+    font-family: "Fahkwang";
+    font-weight: normal;
+    font-style: normal;
+    background-color: rgb(253, 253, 253);
+    height: 100%;
+}
+
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: rgba(0, 0, 0, 0.87);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.main-logo img{
+    height: 80px;
+    width: 160px;
+}
+
+nav a {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: "Fahkwang";
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 12px;
+}
+
+.intro-container{
+    height: 60%;
+    position: relative;
+    background-image: url(intro-background.png);
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 36%;
+    height: 60%;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.intro-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #002d5b;
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.intro-text i {
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+
+.intro-text p {
+    color: #10285d;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.intro-btn a {
+    background: #1062c0;
+    padding: 17px 24px;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.service-types h1 {
+    font-family: "Fahkwang";
+    font-size: 23px;
+    color: #000a2d;
+    font-weight: 300;
+    margin: 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.service1, .service2, .service3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px 20px;
+    margin: 10px 30px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color:#ebebeb;
+}
+
+.service1 h5 a, 
+.service2 h5 a, 
+.service3 h5 a{
+    text-decoration: none;
+    color: #474747;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60%;
+    margin: 20px;
+    background-image: url(contact-container.jpg);
+    border-radius: 10px;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+    padding: 0px 0px;
+    padding-left: 40px;
+    margin-right: 100px;
+    margin-left: 100px;
+    height: 60%;
+    color: white;
+}
+
+.contact-text h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.contact-text p {
+    font-size: 15px;
+}
+
+.contact-form {
+    width: 50%;
+    align-items: center;
+    padding: 20px 20px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 100px;
+}
+
+.contact-form form input,textarea,button {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact-form form button {
+    background: #1062c0;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center; 
+    height: 28%;
+    margin: 20px;
+    background-color:#292c2f;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 33%;
+    color: white;
+    margin-left: 50px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #3478bd;
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 33%;
+    color: white;
+    margin: 50px;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+.footer-location, .footer-phone, .footer-mail {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.footer-location p{
+    padding-left: 15px;
+}
+
+.footer-phone p{
+    padding-left: 15px;
+}
+
+.footer-mail p{
+    padding-left: 15px;
+}
+.footer-mail p a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 33%;
+    color: white;
+    margin-right: 50px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.fa-linkedin , .fa-github, .fa-facebook, .fa-twitter, .fa-instagram  {
+    padding-right: 15px;    
+    color: white;
+}
+
+/* Copyright  */
+#copyrights {
+    background: #292c2f;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    margin: 20px;
+    margin-top: 0;
+    border-radius: 10px;
+}
+  
+#copyrights p {
+    margin: 0 0 5px 0;
+}
+  /* Copyright */
+
+/* Resume CSS */
+.resume-title {
+    background-image: url(resume-title1.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    color:#171d20;
+    text-align: center;
+    height: 60%;
+    background-size: 100% 500px;
+}
+
+.resume-title-text {
+    padding-top: 100px;
+}
+
+.resume-container {
+    background-color:f2f2f2;
+    font-family: 'Anaheim';
+}
+
+.about-container {
+    width: 100%;
+    background-color: #2c3e50   ;
+}
+
+.about-sub-container{
+    margin-left: 240px;
+    margin-right: 240px;
+    height: 35%;
+    padding-top: 15px;
+}
+
+.about-sub-container h5 {
+    color: white;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Anaheim';
+}
+
+#intro {
+    width: 60%;
+    color: white;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+.resume-pdf a {
+    color: white;
+    text-decoration: none;
+}
+
+.resume-pdf a:hover {
+    color: rgb(8, 132, 163);
+    text-decoration: none;
+}
+
+.education {
+    margin-left: 240px;
+    margin-right: 240px;
+}
+
+.edu1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.edu2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.work1,
+.work2,
+.work3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-title1,
+.work-title2,
+.work-title3 {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+/* #work1-discription,
+#work2-discription,
+#work3-discription  {
+} */
+
+li {
+    width: 70%;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+#work1-date,
+#work2-date,
+#work3-date {
+    width: 200%;
+    padding-right: 20px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+
+/* Service page starts */
+
+.service-page {
+    background-image: url(contact.jpg);
+    background-size: 100% 500px;
+    height: 50%;
+    margin: 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+/* Services page ends */
+
+/* Contact page starts */
+
+.contact-page {
+    background-image: url(contact.jpg);
+    background-size: 100% 500px;
+    height: 50%;
+    margin: 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+
+/* Contact page ends */
+
+
+
+
+
+
+
